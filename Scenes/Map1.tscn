@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/Tilesets/red_rock_random.tres" type="TileSet" id=1]
+[ext_resource path="res://Scripts/Tilemap.gd" type="Script" id=2]
+[ext_resource path="res://Sprites/Tilesets/sandstone_tiles.tres" type="TileSet" id=3]
+
+[node name="Map1" type="Node2D"]
+
+[node name="TileMapBg" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 24, 24 )
+format = 1
+script = ExtResource( 2 )
+
+[node name="TileMap" type="TileMap" parent="."]
+z_index = 1
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 24, 24 )
+format = 1
+tile_data = PoolIntArray( 131074, 0, 0, 131075, 0, 196608, 131076, 2, 0, 196610, 0, 196608, 196611, 0, 131072, 196612, 0, 65536, 262146, 5, 0, 262147, 0, 65536, 262148, 0, 0, 262149, 6, 0, 262152, 2, 0, 327683, 8, 131072, 327684, 4, 0, 327685, 0, 0, 327686, 0, 131072, 393221, 1, 0, 393222, 8, 0, 393223, 0, 0, 393224, 0, 131072, 393225, 3, 0, 393226, 0, 196608, 458760, 0, 196608, 458761, 0, 196608, 458762, 7, 0 )

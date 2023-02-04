@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=2]
+
+[ext_resource path="res://Materials/ui_theme_1/stylebox_1.tres" type="StyleBox" id=1]
+
+[resource]
+/styles/stylebox_1 = ExtResource( 1 )
